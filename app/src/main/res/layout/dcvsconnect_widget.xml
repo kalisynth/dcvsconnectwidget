@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000099cc"
+    android:padding="@dimen/widget_margin">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/homebtn"
+        android:background="@drawable/dcvsbtnhome"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@string/homecd" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chatbtn"
+        android:background="@drawable/dcvsbtnchat"
+        android:layout_above="@+id/homebtn"
+        android:layout_alignStart="@+id/homebtn"
+        android:contentDescription="@string/chatcd" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/funbtn"
+        android:background="@drawable/dcvsbtnfun"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/homebtn"
+        android:contentDescription="@string/funcd" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/helpbtn"
+        android:background="@drawable/dcvsbtnhelp"
+        android:layout_below="@+id/homebtn"
+        android:layout_alignStart="@+id/homebtn"
+        android:contentDescription="@string/helpcd" />
+</RelativeLayout>
