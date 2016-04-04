@@ -6,4 +6,10 @@
     <string name="chatcd">Chat Button</string>
     <string name="funcd">Fun Button</string>
     <string name="helpcd">Help Button</string>
+    <string name="skypecd">Skype Button</string>
+    <string name="groupcd">Group Chat Button</string>
+    <string name="gamescd">Games Button</string>
+    <string name="internetcd">Internet Button</string>
+    <string name="remotecd">Remote Help Button</string>
+    <string name="helpguidecd">Help Guide Button</string>
 </resources>

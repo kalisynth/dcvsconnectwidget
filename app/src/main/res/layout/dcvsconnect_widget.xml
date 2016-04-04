@@ -8,7 +8,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/homebtn"
-        android:background="@drawable/dcvsbtnhome"
+        android:background="@drawable/dcvsbtnhome2"
         android:layout_centerVertical="true"
         android:layout_alignParentEnd="true"
         android:contentDescription="@string/homecd" />
@@ -17,7 +17,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/chatbtn"
-        android:background="@drawable/dcvsbtnchat"
+        android:background="@drawable/dcvsbtnchat2"
         android:layout_above="@+id/homebtn"
         android:layout_alignStart="@+id/homebtn"
         android:contentDescription="@string/chatcd" />
@@ -26,7 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/funbtn"
-        android:background="@drawable/dcvsbtnfun"
+        android:background="@drawable/dcvsbtnfun2"
         android:layout_centerVertical="true"
         android:layout_toStartOf="@+id/homebtn"
         android:contentDescription="@string/funcd" />
