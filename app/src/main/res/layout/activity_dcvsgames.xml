@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="org.dcvs.nac.dcvsconnectwidget.Dcvsgames"
+    android:background="@drawable/dcvsgamesbg">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/euchrebtn"
+        android:layout_marginTop="133dp"
+        android:background="@drawable/dcvseuchrebtn"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/solitarebtn"
+        android:contentDescription="@string/euchrecd" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/solitarebtn"
+        android:background="@drawable/dcvssolitarebtn"
+        android:layout_above="@+id/chessbtn"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/solitarecd" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/backgammonbtn"
+        android:background="@drawable/dcvsbackgammonbtn"
+        android:layout_alignTop="@+id/solitarebtn"
+        android:layout_toEndOf="@+id/solitarebtn"
+        android:contentDescription="@string/backgammoncd" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chessbtn"
+        android:layout_below="@+id/euchrebtn"
+        android:layout_alignStart="@+id/euchrebtn"
+        android:background="@drawable/dcvschessbtn"
+        android:contentDescription="@string/chesscd" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/finarbtn"
+        android:layout_alignTop="@+id/chessbtn"
+        android:layout_alignStart="@+id/solitarebtn"
+        android:background="@drawable/dcvs4inarowbtn"
+        android:contentDescription="@string/finarcd" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sudokubtn"
+        android:layout_alignTop="@+id/finarbtn"
+        android:layout_alignStart="@+id/backgammonbtn"
+        android:background="@drawable/dcvssudokubtn"
+        android:contentDescription="@string/sudokucd" />
+</RelativeLayout>

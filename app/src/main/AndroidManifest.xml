@@ -7,8 +7,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.NoActionBar" >
-
+        android:theme="@style/Theme.AppCompat.NoActionBar">
         <receiver android:name=".DCVSConnectWidget">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
@@ -22,6 +21,7 @@
         <activity android:name=".Dcvschat" />
         <activity android:name=".Dcvsfun" />
         <activity android:name=".Dcvshelp" />
+        <activity android:name=".Dcvsgames"></activity>
     </application>
 
 </manifest>
