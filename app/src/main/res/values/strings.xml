@@ -12,4 +12,10 @@
     <string name="internetcd">Internet Button</string>
     <string name="remotecd">Remote Help Button</string>
     <string name="helpguidecd">Help Guide Button</string>
+    <string name="euchrecd">Euchre Button</string>
+    <string name="solitarecd">Solitare Button</string>
+    <string name="backgammoncd">Backgammon Button</string>
+    <string name="chesscd">Chess Button</string>
+    <string name="finarcd">Four in a row button</string>
+    <string name="sudokucd">Sudoku Button</string>
 </resources>
