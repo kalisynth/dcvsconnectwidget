@@ -14,54 +14,62 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/euchrebtn"
-        android:layout_marginTop="133dp"
         android:background="@drawable/dcvseuchrebtn"
-        android:layout_alignParentTop="true"
-        android:layout_toStartOf="@+id/solitarebtn"
-        android:contentDescription="@string/euchrecd" />
+        android:contentDescription="@string/euchrecd"
+        android:onClick="euchreonclick"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="100dp"
+        android:layout_alignParentStart="true" />
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/solitarebtn"
         android:background="@drawable/dcvssolitarebtn"
-        android:layout_above="@+id/chessbtn"
-        android:layout_centerHorizontal="true"
-        android:contentDescription="@string/solitarecd" />
+        android:contentDescription="@string/solitarecd"
+        android:onClick="solitareonclick"
+        android:layout_marginTop="100dp"
+        android:layout_toEndOf="@+id/euchrebtn"/>
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/backgammonbtn"
         android:background="@drawable/dcvsbackgammonbtn"
-        android:layout_alignTop="@+id/solitarebtn"
+        android:contentDescription="@string/backgammoncd"
+        android:layout_marginTop="100dp"
         android:layout_toEndOf="@+id/solitarebtn"
-        android:contentDescription="@string/backgammoncd" />
+        android:onClick="backgammononclick" />
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/chessbtn"
-        android:layout_below="@+id/euchrebtn"
-        android:layout_alignStart="@+id/euchrebtn"
         android:background="@drawable/dcvschessbtn"
-        android:contentDescription="@string/chesscd" />
+        android:contentDescription="@string/chesscd"
+        android:layout_marginStart="100dp"
+
+        android:layout_below="@+id/euchrebtn"
+        android:onClick="chessonclick" />
+
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/finarbtn"
-        android:layout_alignTop="@+id/chessbtn"
-        android:layout_alignStart="@+id/solitarebtn"
-        android:background="@drawable/dcvs4inarowbtn"
-        android:contentDescription="@string/finarcd" />
+        android:background="@drawable/dcvsfinarowbtn"
+        android:contentDescription="@string/finarcd"
+        android:layout_toEndOf="@+id/chessbtn"
+        android:layout_below="@+id/solitarebtn"
+        android:onClick="finaronclick" />
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/sudokubtn"
-        android:layout_alignTop="@+id/finarbtn"
-        android:layout_alignStart="@+id/backgammonbtn"
         android:background="@drawable/dcvssudokubtn"
-        android:contentDescription="@string/sudokucd" />
+        android:contentDescription="@string/sudokucd"
+        android:layout_toEndOf="@+id/finarbtn"
+        android:layout_below="@+id/backgammonbtn"
+        android:onClick="sudokuonclick" />
 </RelativeLayout>

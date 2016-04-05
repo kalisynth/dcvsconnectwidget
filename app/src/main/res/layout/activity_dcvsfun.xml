@@ -17,7 +17,8 @@
         android:background="@drawable/dcvsgamesbtn2"
         android:layout_centerVertical="true"
         android:layout_alignParentStart="true"
-        android:contentDescription="@string/gamescd" />
+        android:contentDescription="@string/gamescd"
+        android:onClick="gamesonclick" />
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -26,5 +27,6 @@
         android:background="@drawable/dcvsinternetbtn2"
         android:layout_centerVertical="true"
         android:layout_alignParentEnd="true"
-        android:contentDescription="@string/internetcd" />
+        android:contentDescription="@string/internetcd"
+        android:onClick="internetonClick" />
 </RelativeLayout>

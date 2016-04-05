@@ -21,7 +21,8 @@
         <activity android:name=".Dcvschat" />
         <activity android:name=".Dcvsfun" />
         <activity android:name=".Dcvshelp" />
-        <activity android:name=".Dcvsgames"></activity>
+        <activity android:name=".Dcvsgames" />
+        <activity android:name=".DcvsInternet"></activity>
     </application>
 
 </manifest>

@@ -18,4 +18,10 @@
     <string name="chesscd">Chess Button</string>
     <string name="finarcd">Four in a row button</string>
     <string name="sudokucd">Sudoku Button</string>
+    <string name="googlecd">Google Button</string>
+    <string name="abccd">ABC News Button</string>
+    <string name="naccd">Nundah Activity Centre button</string>
+    <string name="mapcd">Map Button</string>
+    <string name="sevencd">Seven news Button</string>
+    <string name="seniorcd">Seniors Online Button</string>
 </resources>

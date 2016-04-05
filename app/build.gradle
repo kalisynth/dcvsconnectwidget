@@ -1,9 +1,16 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'MyAKey'
+            keyPassword 'araminta'
+            storeFile file('C:/Users/NACVR/Documents/DCVS Widget Files/keystores/kalisynthapps.jks')
+            storePassword 'araminta'
+        }
+    }
     compileSdkVersion 23
     buildToolsVersion "23.0.2"
-
     defaultConfig {
         applicationId "org.dcvs.nac.dcvsconnectwidget"
         minSdkVersion 19
@@ -15,6 +22,7 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
         }
     }
 }

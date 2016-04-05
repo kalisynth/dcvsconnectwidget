@@ -17,7 +17,8 @@
         android:background="@drawable/dcvsremotebtn2"
         android:layout_centerVertical="true"
         android:layout_alignParentStart="true"
-        android:contentDescription="@string/remotecd" />
+        android:contentDescription="@string/remotecd"
+        android:onClick="quicksupportclick" />
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -26,5 +27,6 @@
         android:layout_centerVertical="true"
         android:layout_alignParentEnd="true"
         android:background="@drawable/dcvshelpbtn"
-        android:contentDescription="@string/helpguidecd" />
+        android:contentDescription="@string/helpguidecd"
+        android:onClick="helpguideonclick" />
 </RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="org.dcvs.nac.dcvsconnectwidget.DcvsInternet"
+    android:background="@drawable/dcvsinternetbackground">
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/googlebtn"
+        android:layout_marginTop="176dp"
+        android:background="@drawable/googlebtn"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onGoogleClick"
+        android:contentDescription="@string/googlecd" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/abcbtn"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/abcnewbutton"
+        android:layout_below="@+id/googlebtn"
+        android:layout_alignParentStart="true"
+        android:onClick="onABCClick"
+        android:contentDescription="@string/abccd" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nacbtn"
+        android:background="@drawable/nacbutn"
+        android:onClick="onNACClick"
+        android:contentDescription="@string/naccd"
+        android:layout_alignTop="@+id/abcbtn"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sevenbtn"
+        android:background="@drawable/sevennews"
+        android:onClick="onSevenClick"
+        android:contentDescription="@string/sevencd"
+        android:layout_alignTop="@+id/nacbtn"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seniorbtn"
+        android:background="@drawable/seniorsonline"
+        android:onClick="onSeniorClick"
+        android:contentDescription="@string/seniorcd"
+        android:layout_above="@+id/abcbtn"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mapbtn"
+        android:background="@drawable/mapbutton"
+        android:layout_alignTop="@+id/googlebtn"
+        android:layout_alignParentEnd="true"
+        android:onClick="mapsonclick"
+        android:contentDescription="@string/mapcd" />
+</RelativeLayout>
+
+

@@ -1,7 +1,10 @@
 package org.dcvs.nac.dcvsconnectwidget;
 
+import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
 public class Dcvshelp extends AppCompatActivity {
 
@@ -10,4 +13,25 @@ public class Dcvshelp extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dcvshelp);
     }
+
+    public void helpguideonclick(View v){
+    Intent helpguideIntent = new Intent();
+        PackageManager helpguideManager = getPackageManager();
+        helpguideIntent = helpguideManager.getLaunchIntentForPackage("appinventor.ai_tim.DCVSHelpGuide");
+        helpguideIntent.addCategory(Intent.CATEGORY_LAUNCHER);
+        startActivity(helpguideIntent);
+        finish();
+    }
+
+    public void quicksupportclick(View v){
+        Intent quicksupportIntent = new Intent();
+        PackageManager quicksupportmanager = getPackageManager();
+        quicksupportIntent = quicksupportmanager.getLaunchIntentForPackage("com.teamviewer.quicksupport.market");
+        quicksupportIntent.addCategory(Intent.CATEGORY_LAUNCHER);
+        startActivity(quicksupportIntent);
+        finish();
+    }
 }
+
+
+//com.teamviewer.quicksupport.market
