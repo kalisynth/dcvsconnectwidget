@@ -8,17 +8,18 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="org.dcvs.nac.dcvsconnectwidget.Dcvschat"
-    android:background="@drawable/dcvschatbg3">
+    android:background="@drawable/dcvscbg">
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/skypebtn"
-        android:layout_centerVertical="true"
-        android:layout_alignParentStart="true"
-        android:background="@drawable/dcvssinglebtn"
+        android:background="#00ffffff"
         android:contentDescription="@string/skypecd"
-        android:onClick="skypeonclick" />
+        android:onClick="skypeonclick"
+        android:src="@drawable/dcvsvcbtn"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -26,7 +27,8 @@
         android:id="@+id/groupchatbtn"
         android:layout_centerVertical="true"
         android:layout_alignParentEnd="true"
-        android:background="@drawable/dcvsgroupbtn"
+        android:background="#00ffffff"
         android:contentDescription="@string/groupcd"
-        android:onClick="googleonclick" />
+        android:onClick="googleonclick"
+        android:src="@drawable/dcvsgcbtn" />
 </RelativeLayout>

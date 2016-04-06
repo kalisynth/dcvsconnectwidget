@@ -8,7 +8,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="org.dcvs.nac.dcvsconnectwidget.DcvsInternet"
-    android:background="@drawable/dcvsinternetbackground">
+    android:background="@drawable/dcvsibg">
 
 
     <ImageButton
@@ -16,62 +16,68 @@
         android:layout_height="wrap_content"
         android:id="@+id/googlebtn"
         android:layout_marginTop="176dp"
-        android:background="@drawable/googlebtn"
+        android:background="#00ffffff"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
         android:onClick="onGoogleClick"
-        android:contentDescription="@string/googlecd" />
+        android:contentDescription="@string/googlecd"
+        android:src="@drawable/dcvsgooglebtn" />
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/abcbtn"
         android:layout_marginTop="68dp"
-        android:background="@drawable/abcnewbutton"
+        android:background="#00ffffff"
         android:layout_below="@+id/googlebtn"
         android:layout_alignParentStart="true"
         android:onClick="onABCClick"
-        android:contentDescription="@string/abccd" />
+        android:contentDescription="@string/abccd"
+        android:src="@drawable/dcvsabcbtn" />
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/nacbtn"
-        android:background="@drawable/nacbutn"
+        android:background="#00ffffff"
         android:onClick="onNACClick"
         android:contentDescription="@string/naccd"
         android:layout_alignTop="@+id/abcbtn"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/dcvsnacbtn" />
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/sevenbtn"
-        android:background="@drawable/sevennews"
+        android:background="#00ffffff"
         android:onClick="onSevenClick"
         android:contentDescription="@string/sevencd"
         android:layout_alignTop="@+id/nacbtn"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/dcvssevenbtn" />
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/seniorbtn"
-        android:background="@drawable/seniorsonline"
+        android:background="#00ffffff"
         android:onClick="onSeniorClick"
         android:contentDescription="@string/seniorcd"
         android:layout_above="@+id/abcbtn"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/dcvsseniorsbtn" />
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/mapbtn"
-        android:background="@drawable/mapbutton"
+        android:background="#00ffffff"
         android:layout_alignTop="@+id/googlebtn"
         android:layout_alignParentEnd="true"
         android:onClick="mapsonclick"
-        android:contentDescription="@string/mapcd" />
+        android:contentDescription="@string/mapcd"
+        android:src="@drawable/dcvsgmapsbtn" />
 </RelativeLayout>
 
 

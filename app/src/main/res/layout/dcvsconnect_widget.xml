@@ -8,35 +8,39 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/homebtn"
-        android:background="@drawable/dcvsbtnhome2"
+        android:background="#00ffffff"
+        android:contentDescription="@string/homecd"
+        android:src="@drawable/dcvsbtnhome2"
         android:layout_centerVertical="true"
-        android:layout_alignParentEnd="true"
-        android:contentDescription="@string/homecd" />
+        android:layout_toStartOf="@+id/helpbtn" />
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/chatbtn"
-        android:background="@drawable/dcvsbtnchat2"
-        android:layout_above="@+id/homebtn"
-        android:layout_alignStart="@+id/homebtn"
-        android:contentDescription="@string/chatcd" />
+        android:background="#00ffffff"
+        android:contentDescription="@string/chatcd"
+        android:src="@drawable/dcvsbtnchat2"
+        android:layout_above="@+id/funbtn"
+        android:layout_toStartOf="@+id/homebtn" />
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/funbtn"
-        android:background="@drawable/dcvsbtnfun2"
-        android:layout_centerVertical="true"
-        android:layout_toStartOf="@+id/homebtn"
-        android:contentDescription="@string/funcd" />
+        android:background="#00ffffff"
+        android:contentDescription="@string/funcd"
+        android:src="@drawable/dcvsbtnfun2"
+        android:layout_alignBottom="@+id/homebtn"
+        android:layout_toStartOf="@+id/homebtn" />
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/helpbtn"
-        android:background="@drawable/dcvsbtnhelp"
-        android:layout_below="@+id/homebtn"
-        android:layout_alignStart="@+id/homebtn"
-        android:contentDescription="@string/helpcd" />
+        android:background="#00ffffff"
+        android:contentDescription="@string/helpcd"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/dcvsbtnhelp" />
 </RelativeLayout>
