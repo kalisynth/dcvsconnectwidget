@@ -24,4 +24,6 @@
     <string name="mapcd">Map Button</string>
     <string name="sevencd">Seven news Button</string>
     <string name="seniorcd">Seniors Online Button</string>
+    <string name="skypev1">Call DCVS Volunteer 1</string>
+    <string name="skypev2">Call DCVS Volunteer 2</string>
 </resources>

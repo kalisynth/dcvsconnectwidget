@@ -31,4 +31,25 @@
         android:contentDescription="@string/groupcd"
         android:onClick="googleonclick"
         android:src="@drawable/dcvsgcbtn" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dcvsv1"
+        android:layout_alignTop="@+id/skypebtn"
+        android:layout_toEndOf="@+id/skypebtn"
+        android:src="@drawable/dcvsv1"
+        android:background="#00ffffff"
+        android:contentDescription="@string/skypev1" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dcvsv2"
+        android:layout_below="@+id/dcvsv1"
+        android:layout_alignStart="@+id/dcvsv1"
+        android:layout_marginTop="41dp"
+        android:contentDescription="@string/skypev2"
+        android:src="@drawable/dcvsv2"
+        android:background="#00ffffff" />
 </RelativeLayout>
