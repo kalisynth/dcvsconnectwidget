@@ -5,6 +5,7 @@ import android.appwidget.AppWidgetManager;
 import android.appwidget.AppWidgetProvider;
 import android.content.Context;
 import android.content.Intent;
+import android.support.v4.content.IntentCompat;
 import android.widget.RemoteViews;
 
 /**
@@ -21,7 +22,7 @@ public class DCVSConnectWidget extends AppWidgetProvider {
         //Home goes home
         Intent homeIntent = new Intent(Intent.ACTION_MAIN);
         homeIntent.addCategory(Intent.CATEGORY_HOME);
-        homeIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        homeIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         PendingIntent homePendingIntent = PendingIntent.getActivity(context, appWidgetId, homeIntent, 0);
         views.setOnClickPendingIntent(R.id.homebtn, homePendingIntent);
 

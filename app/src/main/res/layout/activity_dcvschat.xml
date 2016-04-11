@@ -8,7 +8,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="org.dcvs.nac.dcvsconnectwidget.Dcvschat"
-    android:background="@drawable/dcvscbg">
+    android:background="@drawable/dcvschatlite">
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -17,39 +17,65 @@
         android:background="#00ffffff"
         android:contentDescription="@string/skypecd"
         android:onClick="skypeonclick"
-        android:src="@drawable/dcvsvcbtn"
-        android:layout_centerVertical="true"
-        android:layout_alignParentStart="true" />
+        android:src="@drawable/dcvsvideochat"
+        android:layout_marginStart="147dp"
+        android:layout_below="@+id/dcvsoffice"
+        android:layout_toEndOf="@+id/dcvsoffice"
+        android:layout_marginTop="46dp" />
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/groupchatbtn"
-        android:layout_centerVertical="true"
-        android:layout_alignParentEnd="true"
         android:background="#00ffffff"
         android:contentDescription="@string/groupcd"
         android:onClick="googleonclick"
-        android:src="@drawable/dcvsgcbtn" />
+        android:src="@drawable/dcvsgroupchat"
+        android:layout_alignTop="@+id/skypebtn"
+        android:layout_toEndOf="@+id/skypebtn" />
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/dcvsv1"
-        android:layout_alignTop="@+id/skypebtn"
-        android:layout_toEndOf="@+id/skypebtn"
-        android:src="@drawable/dcvsv1"
+        android:src="@drawable/dcvscv1"
         android:background="#00ffffff"
-        android:contentDescription="@string/skypev1" />
+        android:contentDescription="@string/skypev1"
+        android:onClick="skypev1onclick"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="96dp" />
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/dcvsv2"
-        android:layout_below="@+id/dcvsv1"
-        android:layout_alignStart="@+id/dcvsv1"
-        android:layout_marginTop="41dp"
         android:contentDescription="@string/skypev2"
-        android:src="@drawable/dcvsv2"
-        android:background="#00ffffff" />
+        android:src="@drawable/dcvscv2"
+        android:background="#00ffffff"
+        android:layout_alignTop="@+id/dcvsv1"
+        android:layout_toEndOf="@+id/dcvsv1"
+        android:onClick="skypev2onclick" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dcvsoffice"
+        android:src="@drawable/dcvscdo"
+        android:background="#00ffffff"
+        android:layout_alignTop="@+id/dcvsv2"
+        android:layout_toEndOf="@+id/dcvsv2"
+        android:contentDescription="@string/skypedcvsoffice"
+        android:onClick="skypeofficeonclick" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dcvshelpdesk"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="#00ffffff"
+        android:src="@drawable/dcvscdhd"
+        android:contentDescription="@string/skypedcvshelpdesk"
+        android:onClick="skypehelpdeskonclick" />
 </RelativeLayout>

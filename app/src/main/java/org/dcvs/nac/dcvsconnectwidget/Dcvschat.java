@@ -1,5 +1,6 @@
 package org.dcvs.nac.dcvsconnectwidget;
 
+import android.app.Activity;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
@@ -61,8 +62,6 @@ public class Dcvschat extends AppCompatActivity {
             return;
         }
 
-        mySkypeDCVSv1 = "skype:volunteer1dcvs?call&video=true";
-
         Uri skypeURI = Uri.parse(mySkypeDCVSv1);
         Intent skypedcvs1Intent = new Intent(Intent.ACTION_VIEW, skypeURI);
 
@@ -73,27 +72,23 @@ public class Dcvschat extends AppCompatActivity {
 
     }
 
-    public void skypedcvs2call(Context skypeCalldcvsv2, String mySkypeDCVSv2){
-        if (!isSkypeClientInstalled(skypeCalldcvsv2)) {
-            goToMarket(skypeCalldcvsv2);
-            return;
-        }
-
-        mySkypeDCVSv2 = "skype:volunteer2dcvs?call&video=true";
-
-        Uri skypeURI = Uri.parse(mySkypeDCVSv2);
-        Intent skypedcvs1Intent = new Intent(Intent.ACTION_VIEW, skypeURI);
-
-        skypedcvs1Intent.setComponent(new ComponentName("com.skype.raider", "com.skype.raider.Main"));
-        skypedcvs1Intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-
-        skypeCalldcvsv2.startActivity(skypedcvs1Intent);
-
-    }
-
     public void skypev1onclick(View v){
-        skypedcvs1call("skype:volunteer1dcvs?call&video=true");
+        skypedcvs1call(this, "skype:volunteer1dcvs?call&video=true");
     }
+
+    public void skypev2onclick(View v){
+        skypedcvs1call(this, "skype:volunteer2dcvs?call&video=true");
+    }
+
+    public void skypeofficeonclick(View v){
+        skypedcvs1call(this, "skype:dcvsoffice?call&video=true");
+    }
+
+    public void skypehelpdeskonclick(View v){
+        skypedcvs1call(this, "skype:helpdeskdcvs?call&video=true");
+    }
+
+
 
 
 }

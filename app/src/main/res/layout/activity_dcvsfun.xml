@@ -8,7 +8,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="org.dcvs.nac.dcvsconnectwidget.Dcvsfun"
-    android:background="@drawable/dcvsfbg">
+    android:background="@drawable/dcvsfunbg">
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -19,7 +19,7 @@
         android:layout_alignParentStart="true"
         android:contentDescription="@string/gamescd"
         android:onClick="gamesonclick"
-        android:src="@drawable/dcvsgbtn" />
+        android:src="@drawable/dcvsgbtn2" />
 
     <ImageButton
         android:layout_width="wrap_content"

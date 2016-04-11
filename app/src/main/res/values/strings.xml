@@ -26,4 +26,7 @@
     <string name="seniorcd">Seniors Online Button</string>
     <string name="skypev1">Call DCVS Volunteer 1</string>
     <string name="skypev2">Call DCVS Volunteer 2</string>
+    <string name="skypedcvsoffice">Call DCVS Office</string>
+    <string name="skypedcvshelpdesk">Call DCVS Help Desk</string>
+    <string name="widgetbackdrop">DCVS Widget</string>
 </resources>
