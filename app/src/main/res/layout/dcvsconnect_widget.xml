@@ -20,9 +20,10 @@
         android:id="@+id/homebtn"
         android:background="#00ffffff"
         android:contentDescription="@string/homecd"
-        android:src="@drawable/btnhomemed"
-        android:layout_alignTop="@+id/funbtn"
-        android:layout_toEndOf="@+id/chatbtn" />
+        android:src="@drawable/btnhometempsymbolplustext_copy"
+        android:layout_marginEnd="29dp"
+        android:layout_alignTop="@+id/chatbtn"
+        android:layout_alignEnd="@+id/widgetbg" />
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -30,9 +31,10 @@
         android:id="@+id/chatbtn"
         android:background="#00ffffff"
         android:contentDescription="@string/chatcd"
-        android:src="@drawable/dcvsbtnchat2"
-        android:layout_alignTop="@+id/homebtn"
-        android:layout_toEndOf="@+id/funbtn" />
+        android:src="@drawable/btnchatsymboloutline"
+        android:layout_alignBottom="@+id/widgetbg"
+        android:layout_toStartOf="@+id/homebtn"
+        android:layout_marginBottom="18dp" />
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -40,9 +42,9 @@
         android:id="@+id/funbtn"
         android:background="#00ffffff"
         android:contentDescription="@string/funcd"
-        android:src="@drawable/dcvsbtnfun2"
-        android:layout_alignTop="@+id/helpbtn"
-        android:layout_toEndOf="@+id/helpbtn" />
+        android:src="@drawable/btnfunsymbolplustextoutline"
+        android:layout_alignTop="@+id/chatbtn"
+        android:layout_toStartOf="@+id/chatbtn" />
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -50,36 +52,8 @@
         android:id="@+id/helpbtn"
         android:background="#00ffffff"
         android:contentDescription="@string/helpcd"
-        android:src="@drawable/dcvsbtnhelp"
-        android:layout_alignBottom="@+id/widgetbg"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="32dp" />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageButton"
-        android:src="@drawable/btnhometempsymbol"
-        android:background="#00ffffff"
-        android:layout_alignTop="@+id/homebtn"
-        android:layout_toEndOf="@+id/homebtn" />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageButton2"
-        android:background="#00ffffff"
-        android:src="@drawable/btnhometempsymbolplustext"
-        android:layout_alignTop="@+id/imageButton"
-        android:layout_toEndOf="@+id/imageButton" />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageButton3"
-        android:src="@drawable/btnhometempsymbolplustext_copy"
-        android:background="#00ffffff"
-        android:layout_alignTop="@+id/imageButton2"
-        android:layout_toEndOf="@+id/imageButton2" />
+        android:src="@drawable/btnhelpsymboloutline"
+        android:layout_alignTop="@+id/funbtn"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>
