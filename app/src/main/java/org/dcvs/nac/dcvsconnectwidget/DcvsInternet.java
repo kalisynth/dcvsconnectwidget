@@ -17,7 +17,7 @@ public class DcvsInternet extends AppCompatActivity {
 
 
     public void mapsonclick(View v) {
-        Intent googlemIntent = new Intent();
+        Intent googlemIntent;
         PackageManager googleManager = getPackageManager();
         googlemIntent = googleManager.getLaunchIntentForPackage("com.google.android.apps.maps");
         googlemIntent.addCategory(Intent.CATEGORY_LAUNCHER);

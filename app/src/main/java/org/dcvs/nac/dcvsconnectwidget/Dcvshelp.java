@@ -15,7 +15,7 @@ public class Dcvshelp extends AppCompatActivity {
     }
 
     public void helpguideonclick(View v){
-    Intent helpguideIntent = new Intent();
+    Intent helpguideIntent;
         PackageManager helpguideManager = getPackageManager();
         helpguideIntent = helpguideManager.getLaunchIntentForPackage("appinventor.ai_tim.DCVSHelpGuide");
         helpguideIntent.addCategory(Intent.CATEGORY_LAUNCHER);
@@ -24,7 +24,7 @@ public class Dcvshelp extends AppCompatActivity {
     }
 
     public void quicksupportclick(View v){
-        Intent quicksupportIntent = new Intent();
+        Intent quicksupportIntent;
         PackageManager quicksupportmanager = getPackageManager();
         quicksupportIntent = quicksupportmanager.getLaunchIntentForPackage("com.teamviewer.quicksupport.samsung");
         quicksupportIntent.addCategory(Intent.CATEGORY_LAUNCHER);

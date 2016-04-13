@@ -1,6 +1,5 @@
 package org.dcvs.nac.dcvsconnectwidget;
 
-import android.app.Activity;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
@@ -28,8 +27,6 @@ public class Dcvschat extends AppCompatActivity {
         Intent myIntent = new Intent(Intent.ACTION_VIEW, marketUri);
         myIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         skypeinstalled.startActivity(myIntent);
-
-        return;
     }
 
     @Override
@@ -39,7 +36,7 @@ public class Dcvschat extends AppCompatActivity {
     }
 
     public void skypeonclick(View v){
-        Intent skypeIntent = new Intent();
+        Intent skypeIntent;
         PackageManager skypeManager = getPackageManager();
         skypeIntent = skypeManager.getLaunchIntentForPackage("com.skype.raider");
         skypeIntent.addCategory(Intent.CATEGORY_LAUNCHER);
@@ -48,7 +45,7 @@ public class Dcvschat extends AppCompatActivity {
     }
 
     public void googleonclick(View v){
-        Intent googleIntent = new Intent();
+        Intent googleIntent;
         PackageManager googleManager = getPackageManager();
         googleIntent = googleManager.getLaunchIntentForPackage("com.google.android.talk");
         googleIntent.addCategory(Intent.CATEGORY_LAUNCHER);

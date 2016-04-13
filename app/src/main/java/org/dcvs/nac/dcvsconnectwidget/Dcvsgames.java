@@ -15,7 +15,7 @@ public class Dcvsgames extends AppCompatActivity {
     }
 
     public void euchreonclick(View v){
-        Intent euchreIntent = new Intent();
+        Intent euchreIntent;
         PackageManager euchreManager = getPackageManager();
         euchreIntent = euchreManager.getLaunchIntentForPackage("uk.co.aifactory.euchre");
         euchreIntent.addCategory(Intent.CATEGORY_LAUNCHER);
@@ -24,7 +24,7 @@ public class Dcvsgames extends AppCompatActivity {
     }
 
     public void solitareonclick(View v) {
-        Intent solitareIntent = new Intent();
+        Intent solitareIntent;
         PackageManager solitareManager = getPackageManager();
         solitareIntent = solitareManager.getLaunchIntentForPackage("uk.co.aifactory.solitaire");
         solitareIntent.addCategory(Intent.CATEGORY_LAUNCHER);
@@ -33,7 +33,7 @@ public class Dcvsgames extends AppCompatActivity {
     }
 
     public void backgammononclick(View v) {
-        Intent backgamIntent = new Intent();
+        Intent backgamIntent;
         PackageManager backagamManager = getPackageManager();
         backgamIntent = backagamManager.getLaunchIntentForPackage("uk.co.aifactory.solitaire");
         backgamIntent.addCategory(Intent.CATEGORY_LAUNCHER);
@@ -42,7 +42,7 @@ public class Dcvsgames extends AppCompatActivity {
     }
 
     public void chessonclick(View v) {
-        Intent chessIntent = new Intent();
+        Intent chessIntent;
         PackageManager chessManager = getPackageManager();
         chessIntent = chessManager.getLaunchIntentForPackage("uk.co.aifactory.chess");
         chessIntent.addCategory(Intent.CATEGORY_LAUNCHER);
@@ -51,7 +51,7 @@ public class Dcvsgames extends AppCompatActivity {
     }
 
     public void finaronclick(View v) {
-        Intent fialIntent = new Intent();
+        Intent fialIntent;
         PackageManager fialManager = getPackageManager();
         fialIntent = fialManager.getLaunchIntentForPackage("uk.co.aifactory.fial");
         fialIntent.addCategory(Intent.CATEGORY_LAUNCHER);
@@ -60,7 +60,7 @@ public class Dcvsgames extends AppCompatActivity {
     }
 
     public void  sudokuonclick(View v) {
-        Intent sudokuIntent = new Intent();
+        Intent sudokuIntent;
         PackageManager sudokuManager = getPackageManager();
         sudokuIntent = sudokuManager.getLaunchIntentForPackage("uk.co.aifactory.sudoku");
         sudokuIntent.addCategory(Intent.CATEGORY_LAUNCHER);
