@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Dcvsconnectwidget.iml" filepath="$PROJECT_DIR$/Dcvsconnectwidget.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dcvsconnectwidget.iml" filepath="$PROJECT_DIR$/dcvsconnectwidget.iml" />
     </modules>
   </component>
 </project>
