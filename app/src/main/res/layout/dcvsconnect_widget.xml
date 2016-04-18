@@ -56,4 +56,13 @@
         android:layout_alignTop="@+id/funbtn"
         android:layout_alignParentStart="true" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/endcallbtndesc"
+        android:id="@+id/endcallbtn"
+        android:layout_alignTop="@+id/homebtn"
+        android:layout_toEndOf="@+id/widgetbg"
+        android:contentDescription="@string/endcallbtndesc" />
+
 </RelativeLayout>

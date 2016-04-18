@@ -29,4 +29,5 @@
     <string name="skypedcvsoffice">Call DCVS Office</string>
     <string name="skypedcvshelpdesk">Call DCVS Help Desk</string>
     <string name="widgetbackdrop">DCVS Widget</string>
+    <string name="endcallbtndesc">End Call Button</string>
 </resources>

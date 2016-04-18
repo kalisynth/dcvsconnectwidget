@@ -31,4 +31,15 @@
         android:contentDescription="@string/helpguidecd"
         android:onClick="helpguideonclick"
         android:src="@drawable/dcvshgbtn" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/helpguidebtn"
+        android:layout_marginEnd="37dp"
+        android:src="@drawable/dcvscdhd"
+        android:background="#00ffffff"
+        android:onClick="skypehelpdeskonclick" />
 </RelativeLayout>
