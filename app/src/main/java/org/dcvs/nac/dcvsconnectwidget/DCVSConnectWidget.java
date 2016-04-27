@@ -5,6 +5,8 @@ import android.appwidget.AppWidgetManager;
 import android.appwidget.AppWidgetProvider;
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
+import android.view.View;
 import android.widget.RemoteViews;
 
 /**
@@ -70,5 +72,12 @@ public class DCVSConnectWidget extends AppWidgetProvider {
     public void onDisabled(Context context) {
         // Enter relevant functionality for when the last widget is disabled
     }
+
+  //  public void onEndcallClick(View v) {
+    //    Uri skypeURI =
+
+      //  skype.ActiveCalls[1].finish();
+    //}
+
 }
 

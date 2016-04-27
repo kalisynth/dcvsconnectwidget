@@ -19,6 +19,8 @@ public class Dcvsfun extends AppCompatActivity {
     }
 
     public void internetonClick(View v) { startActivity(new Intent(Dcvsfun.this, DcvsInternet.class)); finish();}
+
+    public void radioonClick(View v) { startActivity(new Intent(Dcvsfun.this, dcvsRadio.class)); finish();}
 }
 
 

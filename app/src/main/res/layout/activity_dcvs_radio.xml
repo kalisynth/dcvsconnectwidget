@@ -9,4 +9,13 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="org.dcvs.nac.dcvsconnectwidget.dcvsRadio">
 
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/playBTN"
+        android:src="@android:drawable/ic_media_play"
+        android:onClick="onClickPlay"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="566dp" />
 </RelativeLayout>

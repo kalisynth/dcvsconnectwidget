@@ -31,4 +31,13 @@
         android:contentDescription="@string/internetcd"
         android:onClick="internetonClick"
         android:src="@drawable/dcvsibtn" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Radio Button"
+        android:id="@+id/radioBTN"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="radioonClick" />
 </RelativeLayout>
