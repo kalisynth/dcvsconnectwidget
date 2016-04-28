@@ -23,7 +23,8 @@
         <activity android:name=".Dcvshelp" />
         <activity android:name=".Dcvsgames" />
         <activity android:name=".DcvsInternet" />
-        <activity android:name=".dcvsRadio"></activity>
+        <activity android:name=".dcvsRadio" />
+        <activity android:name=".Radio"></activity>
     </application>
 
 </manifest>

@@ -34,4 +34,5 @@
     <string name="radiopausecd">Pause the Radio Button</string>
     <string name="radiostopcd">Stop the Radio</string>
     <string name="radiobgcd">Radio Background Image</string>
+    <string name="title_activity_dcvsradio2">DCVS Radio</string>
 </resources>

@@ -9,8 +9,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import org.videolan.libvlc.LibVLC;
+import org.videolan.libvlc.MediaPlayer;
+
 public class dcvsRadio extends AppCompatActivity {
 
+    /*LibVLC mLibVLC = null;
+    MediaPlayer mMediaPlayer = null;
+
+    boolean mPlayingRadio = false;
+    */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
