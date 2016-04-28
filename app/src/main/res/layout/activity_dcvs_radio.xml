@@ -7,15 +7,38 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="org.dcvs.nac.dcvsconnectwidget.dcvsRadio">
+    tools:context="org.dcvs.nac.dcvsconnectwidget.dcvsRadio"
+    android:background="#e0efca">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radiobg"
+        android:src="@drawable/dcvsradio2bg"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/radiobgcd" />
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/playBTN"
-        android:src="@android:drawable/ic_media_play"
-        android:onClick="onClickPlay"
+        android:id="@+id/radioPlaybtn"
+        android:src="@drawable/dcvsrplaybtn"
+        android:background="#00ffffff"
         android:layout_centerVertical="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="566dp" />
+        android:layout_alignStart="@+id/radiobg"
+        android:onClick="onClickPlay"
+        android:contentDescription="@string/radioplaycd" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioStopbtn"
+        android:src="@drawable/dcvsrstopbtn"
+        android:background="#00ffffff"
+        android:layout_alignTop="@+id/radiobg"
+        android:layout_alignEnd="@+id/radiobg"
+        android:contentDescription="@string/radiostopcd"
+        android:onClick="onClickStop" />
+
 </RelativeLayout>

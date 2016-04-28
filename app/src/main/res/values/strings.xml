@@ -29,4 +29,9 @@
     <string name="skypedcvsoffice">Call DCVS Office</string>
     <string name="skypedcvshelpdesk">Call DCVS Help Desk</string>
     <string name="widgetbackdrop">DCVS Widget</string>
+    <string name="radiocd">Radio Button</string>
+    <string name="radioplaycd">Play the Radio Button</string>
+    <string name="radiopausecd">Pause the Radio Button</string>
+    <string name="radiostopcd">Stop the Radio</string>
+    <string name="radiobgcd">Radio Background Image</string>
 </resources>

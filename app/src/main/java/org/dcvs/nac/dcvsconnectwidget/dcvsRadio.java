@@ -32,7 +32,20 @@ public class dcvsRadio extends AppCompatActivity {
         }
     }
 
-
+    private void pausestopVLC(String com)
+    {
+        try{
+            Intent i = new Intent(Intent.ACTION_VIEW);
+            i.setComponent(new ComponentName("org.videolan.vlc", "org.videolan.vlc.gui.video.VideoPlayerActivity"));
+            i.setData(Uri.parse(com));
+            startActivity(i);
+        }
+        catch (ActivityNotFoundException e){
+            Uri uri = Uri.parse("http://play.google.com/store/apps/details?id=org.videolan.vlc");
+            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+            startActivity(intent);
+        }
+    }
 
     public void onClickPlay(View v){
         launchVLC("http://janus.cdnstream.com:5189/live");
@@ -61,6 +74,14 @@ public class dcvsRadio extends AppCompatActivity {
         playIntent.setAction(Intent.ACTION_VIEW);
         playIntent.setData(streamUrl);
         startActivity(playIntent);*/
+    }
+
+    public void onClickPause(View v){
+        pausestopVLC("Pause");
+    }
+
+    public void onClickStop(View v){
+        pausestopVLC("Stop");
     }
 }
 
