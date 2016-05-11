@@ -4,26 +4,15 @@
     android:background="#000099cc"
     android:padding="@dimen/widget_margin">
 
-    <ImageView
-        android:layout_width="300dp"
-        android:layout_height="100dp"
-        android:id="@+id/widgetbg"
-        android:background="#00ffffff"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:src="@drawable/wbg3"
-        android:contentDescription="@string/widgetbackdrop" />
-
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/homebtn"
         android:background="#00ffffff"
         android:contentDescription="@string/homecd"
-        android:src="@drawable/btnhometempsymbolplustext_copy"
-        android:layout_marginEnd="29dp"
-        android:layout_alignTop="@+id/chatbtn"
-        android:layout_alignEnd="@+id/widgetbg" />
+        android:src="@drawable/rechomebtn"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -31,10 +20,10 @@
         android:id="@+id/chatbtn"
         android:background="#00ffffff"
         android:contentDescription="@string/chatcd"
-        android:src="@drawable/btnchatsymboloutline"
-        android:layout_alignBottom="@+id/widgetbg"
-        android:layout_toStartOf="@+id/homebtn"
-        android:layout_marginBottom="18dp" />
+        android:src="@drawable/recchatbtn"
+        android:layout_marginRight="33dp"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/homebtn" />
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -42,8 +31,9 @@
         android:id="@+id/funbtn"
         android:background="#00ffffff"
         android:contentDescription="@string/funcd"
-        android:src="@drawable/btnfunsymbolplustextoutline"
-        android:layout_alignTop="@+id/chatbtn"
+        android:src="@drawable/recfun"
+        android:layout_marginRight="33dp"
+        android:layout_alignParentTop="true"
         android:layout_toStartOf="@+id/chatbtn" />
 
     <ImageButton
@@ -52,8 +42,9 @@
         android:id="@+id/helpbtn"
         android:background="#00ffffff"
         android:contentDescription="@string/helpcd"
-        android:src="@drawable/btnhelpsymboloutline"
-        android:layout_alignTop="@+id/funbtn"
-        android:layout_alignParentStart="true" />
+        android:src="@drawable/dcvshelp3"
+        android:layout_marginRight="33dp"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/funbtn" />
 
 </RelativeLayout>

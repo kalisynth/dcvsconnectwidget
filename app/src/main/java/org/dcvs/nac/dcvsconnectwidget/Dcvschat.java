@@ -89,3 +89,6 @@ public class Dcvschat extends AppCompatActivity {
 
 
 }
+
+
+//todo: button for join groups i.e. social butterflies etc.

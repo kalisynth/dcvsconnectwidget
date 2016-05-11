@@ -24,6 +24,7 @@ public class DirectoryAdapter extends BaseAdapter {
 
     public DirectoryAdapter() {
         mAudio = true;
+        refresh();
     }
 
     public boolean isAudioMode() {
@@ -32,6 +33,26 @@ public class DirectoryAdapter extends BaseAdapter {
 
     public void setAudioMode(boolean b) {
         mAudio = b;
+    }
+
+    public void refresh() {
+        File[] files = Environment.getExternalStorageDirectory().listFiles();
+        mFiles.clear();
+        for(File f : files) {
+            // Filter using libVLC's 'supported audio formats' filter.
+            if(f.getName().contains(".")) {
+                int i = f.getName().lastIndexOf(".");
+                if (i > 0) {
+                    if ((mAudio && Extensions.AUDIO.contains(f.getName()
+                            .substring(i)))
+                            || (!mAudio && Extensions.VIDEO.contains(f
+                            .getName().substring(i)))) {
+                        mFiles.add(f.getName());
+                    }
+                }
+            }
+        }
+        this.notifyDataSetChanged();
     }
 
     @Override
@@ -57,10 +78,10 @@ public class DirectoryAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View v, ViewGroup parent) {
-        if (v == null) {
+        if(v == null) {
             v = new TextView(parent.getContext());
         }
-        ((TextView) v).setText(mFiles.get(position));
+        ((TextView)v).setText(mFiles.get(position));
 
         return v;
     }
@@ -101,4 +122,5 @@ public class DirectoryAdapter extends BaseAdapter {
     public boolean isEnabled(int arg0) {
         return true;
     }
+
 }

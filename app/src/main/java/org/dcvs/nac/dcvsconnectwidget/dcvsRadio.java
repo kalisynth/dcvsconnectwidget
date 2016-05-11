@@ -44,7 +44,7 @@ public class dcvsRadio extends AppCompatActivity {
     {
         try{
             Intent i = new Intent(Intent.ACTION_VIEW);
-            i.setComponent(new ComponentName("org.videolan.vlc", "org.videolan.vlc.gui.video.VideoPlayerActivity"));
+            i.setComponent(new ComponentName("org.videolan.vlc", "org.videolan.libvlc.media.MediaPlayer"));
             i.setData(Uri.parse(com));
             startActivity(i);
         }
@@ -56,7 +56,7 @@ public class dcvsRadio extends AppCompatActivity {
     }
 
     public void onClickPlay(View v){
-        launchVLC("http://janus.cdnstream.com:5189/live");
+        launchVLC("http://thassos.cdnstream.com:5049/live");
 
         final Handler handler = new Handler();
         handler.postDelayed(new Runnable(){
@@ -85,11 +85,12 @@ public class dcvsRadio extends AppCompatActivity {
     }
 
     public void onClickPause(View v){
-        pausestopVLC("Pause");
+        pausestopVLC("pause");
     }
 
     public void onClickStop(View v){
-        pausestopVLC("Stop");
+        pausestopVLC("stop");
     }
 }
 
+//todo: complete transfer to libvlc add play/pause - option for other streams
