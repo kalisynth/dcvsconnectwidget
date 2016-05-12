@@ -1,40 +1,17 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:background="#000099cc"
     android:padding="@dimen/widget_margin">
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/homebtn"
-        android:background="#00ffffff"
-        android:contentDescription="@string/homecd"
-        android:src="@drawable/rechomebtn"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true" />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/chatbtn"
-        android:background="#00ffffff"
-        android:contentDescription="@string/chatcd"
-        android:src="@drawable/recchatbtn"
-        android:layout_marginRight="33dp"
-        android:layout_alignParentTop="true"
-        android:layout_toStartOf="@+id/homebtn" />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/funbtn"
-        android:background="#00ffffff"
-        android:contentDescription="@string/funcd"
-        android:src="@drawable/recfun"
-        android:layout_marginRight="33dp"
-        android:layout_alignParentTop="true"
-        android:layout_toStartOf="@+id/chatbtn" />
+    <ImageView
+        android:layout_width="600dp"
+        android:layout_height="200dp"
+        android:id="@+id/bgimg"
+        android:src="@drawable/bg3"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/bgimg" />
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -43,8 +20,40 @@
         android:background="#00ffffff"
         android:contentDescription="@string/helpcd"
         android:src="@drawable/dcvshelp3"
-        android:layout_marginRight="33dp"
-        android:layout_alignParentTop="true"
-        android:layout_toStartOf="@+id/funbtn" />
+        android:layout_marginStart="93dp"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/bgimg" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/funbtn"
+        android:background="#00ffffff"
+        android:contentDescription="@string/funcd"
+        android:src="@drawable/recfun"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/chatbtn"
+        android:layout_marginStart="54dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chatbtn"
+        android:background="#00ffffff"
+        android:contentDescription="@string/chatcd"
+        android:src="@drawable/recchatbtn"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/homebtn" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/homebtn"
+        android:background="#00ffffff"
+        android:contentDescription="@string/homecd"
+        android:src="@drawable/rechomebtn"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="20dp"
+        android:layout_alignEnd="@+id/bgimg" />
 
 </RelativeLayout>
