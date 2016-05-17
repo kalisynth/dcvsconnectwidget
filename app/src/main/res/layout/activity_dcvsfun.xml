@@ -19,7 +19,7 @@
         android:layout_alignParentStart="true"
         android:contentDescription="@string/gamescd"
         android:onClick="gamesonclick"
-        android:src="@drawable/dcvsgbtn2" />
+        android:src="@drawable/dcvsrectgames" />
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -30,17 +30,6 @@
         android:layout_alignParentEnd="true"
         android:contentDescription="@string/internetcd"
         android:onClick="internetonClick"
-        android:src="@drawable/dcvsibtn" />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/radiobtn"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/dcvsradiobtn"
-        android:background="#00ffffff"
-        android:onClick="radioonClick"
-        android:contentDescription="@string/radiocd" />
+        android:src="@drawable/dcvsrectinternet" />
 
 </RelativeLayout>
