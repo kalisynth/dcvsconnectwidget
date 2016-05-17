@@ -66,7 +66,7 @@
         android:layout_toEndOf="@+id/chessbtn"
         android:layout_below="@+id/solitarebtn"
         android:onClick="finaronclick"
-        android:src="@drawable/dcvsfinarowbtn" />
+        android:src="@drawable/dcvs4inarowbtn" />
 
     <ImageButton
         android:layout_width="wrap_content"
